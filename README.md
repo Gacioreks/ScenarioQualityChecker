@@ -6,7 +6,7 @@
 
 
 ### Skład zespołu:
-  Tobiasz Gruszczyński *145333*
-  Sebastian Grabowski *145248*
-  Krzysztof Gatka *numer*
-  Szymon Krysztopolski *numer*
+- Tobiasz Gruszczyński *145333*
+- Sebastian Grabowski *145248*
+- Krzysztof Gatka *145270*
+- Szymon Krysztopolski *144619*
