@@ -10,3 +10,7 @@
 - Sebastian Grabowski *145248*
 - Krzysztof Gatka *145270*
 - Szymon Krysztopolski *144619*
+
+### Przydatne linki:
+- [Produkct Backlog](https://docs.google.com/spreadsheets/d/1RaPXlzczCzx5ePK6UCaZqk6puclsZvqs/edit#gid=1302017536).
+- [Zasady punktowania sprintów](https://docs.google.com/spreadsheets/d/e/2PACX-1vTn6j3M8pmGEzrsQk8mXse7lVHUdhYWkfxbkQiYI23rBtwM4N3bWw0qtupW-gesfCkcYasnZ-eEXl-F/pubhtml#).
