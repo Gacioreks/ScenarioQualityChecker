@@ -1,4 +1,5 @@
 ![example workflow](https://github.com/Gacioreks/ScenarioQualityChecker/actions/workflows/ci.yml/badge.svg)
+![example workflow](https://github.com/Gacioreks/ScenarioQualityChecker/actions/workflows/maven.yml/badge.svg)
 # Inzynieria_Oprogramowania_Sem5 - Projekt zaliczeniowy
 
 ## ScenarioQualityChecker (SQC)
