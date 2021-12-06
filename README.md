@@ -6,19 +6,19 @@
 
 ### Przykładowa notacja scenariusza
 
-> • Scenariusz zawiera nagłówek określający jego tytuł i aktorów (zewnętrznych oraz system)
-• Scenariusz składa się z kroków (każdy krok zawiera tekst)
-• Kroki mogą zawierać pod-scenariusze (dowolny poziom zagłębień)
-• Kroki mogą się zaczynać od słów kluczowych: IF, ELSE, FOR EACH
+- Scenariusz zawiera nagłówek określający jego tytuł i aktorów (zewnętrznych oraz system)
+- Scenariusz składa się z kroków (każdy krok zawiera tekst)
+- Kroki mogą zawierać pod-scenariusze (dowolny poziom zagłębień)
+- Kroki mogą się zaczynać od słów kluczowych: IF, ELSE, FOR EACH
 
 ###  Przykład scenariusza:
-> Tytuł: Dodanie książki
+Tytuł: Dodanie książki
 Aktorzy:  Bibliotekarz
 Aktor systemowy: System
-• Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
-• Wyświetla się formularz.
-• Bibliotekarz podaje dane książki.
-• IF: Bibliotekarz pragnie dodać egzemplarze książki
+- Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
+- Wyświetla się formularz.
+- Bibliotekarz podaje dane książki.
+- IF: Bibliotekarz pragnie dodać egzemplarze książki
     o Bibliotekarz wybiera opcję definiowania egzemplarzy
     o System prezentuje zdefiniowane egzemplarze
     o FOR EACH egzemplarz:
@@ -26,8 +26,8 @@ Aktor systemowy: System
         • System prosi o podanie danych egzemplarza
         • Bibliotekarz podaje dane egzemplarza i zatwierdza.
         • System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
-• Bibliotekarz zatwierdza dodanie książki.
-• System informuje o poprawnym dodaniu książki.
+- Bibliotekarz zatwierdza dodanie książki.
+- System informuje o poprawnym dodaniu książki.
 
 ### Skład zespołu:
 - Tobiasz Gruszczyński *145333*
