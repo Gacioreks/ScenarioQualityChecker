@@ -6,17 +6,15 @@
 
 ### Przykładowa notacja scenariusza
 
-> Notacja scenariuszy do wrzucenia do Readme.md projektu:
-• Scenariusz zawiera nagłówek określający jego tytuł i aktorów (zewnętrznych oraz system)
+> • Scenariusz zawiera nagłówek określający jego tytuł i aktorów (zewnętrznych oraz system)
 • Scenariusz składa się z kroków (każdy krok zawiera tekst)
 • Kroki mogą zawierać pod-scenariusze (dowolny poziom zagłębień)
 • Kroki mogą się zaczynać od słów kluczowych: IF, ELSE, FOR EACH
 
-Przykład:
-Tytuł: Dodanie książki
+###  Przykład scenariusza:
+> Tytuł: Dodanie książki
 Aktorzy:  Bibliotekarz
 Aktor systemowy: System
-
 • Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
 • Wyświetla się formularz.
 • Bibliotekarz podaje dane książki.
@@ -30,7 +28,6 @@ Aktor systemowy: System
         • System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
 • Bibliotekarz zatwierdza dodanie książki.
 • System informuje o poprawnym dodaniu książki.
-
 
 ### Skład zespołu:
 - Tobiasz Gruszczyński *145333*
