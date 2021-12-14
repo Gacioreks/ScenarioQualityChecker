@@ -1,5 +1,10 @@
 package pl.put.poznan.transformer.logic;
 
+import pl.put.poznan.transformer.base.Content;
+import pl.put.poznan.transformer.base.Scenario;
+import pl.put.poznan.transformer.base.Step;
+import pl.put.poznan.transformer.base.SubScenario;
+
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.ArrayList;
@@ -26,5 +31,37 @@ public class FileReader {
             e.printStackTrace();
         }
         return result;
+    }
+
+    public static Scenario arr2Scenario(String file)
+    {
+        ArrayList<String> list;
+        list = read(file);
+        int n = list.size();
+        Scenario s = new Scenario();
+
+        if (list != null){
+        s.title = list.get(0);
+        s.actors.add(list.get(1)); //jeden element, pozniej rozszerzyc
+        s.systemActor = list.get(2);
+
+        ArrayList<Step> steps = new ArrayList<Step>(n-3);
+        for(int i=3;i<n;i++)
+        {
+            steps.add(i-3,new Step(list.get(i)));
+            //System.out.println(steps.get(i-3).value);
+        }
+        s.mySubScenario.content = steps;
+    }
+        else{
+            s.title = new String();
+            s.actors = new ArrayList<String>();
+            s.systemActor = new String();
+            s.mySubScenario.content = new ArrayList<>();
+        }
+
+
+
+        return s;
     }
 }

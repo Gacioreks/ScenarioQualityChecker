@@ -8,17 +8,21 @@ public class Scenario {
     public String title;
     public ArrayList<String> actors;
     public String systemActor;
-    public ArrayList<Step> steps;
+    public SubScenario mySubScenario;
 
-    Scenario(){
+    public Scenario(){
+        title = new String();
         actors = new ArrayList<String>();
-        steps = new ArrayList<Step>();
+        systemActor = new String();
+        mySubScenario = new SubScenario();
     }
-
+/*
     public void accept(Visitor v){
         v.visit(this);
         for (Step s : this.steps){
             s.accept(v);
         }
     }
+
+ */
 }

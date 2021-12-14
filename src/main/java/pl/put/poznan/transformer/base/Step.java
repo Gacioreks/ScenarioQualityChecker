@@ -4,14 +4,16 @@ import pl.put.poznan.transformer.logic.Visitor;
 
 import java.util.ArrayList;
 
-public class Step {
-    public String content;
-    public ArrayList<Step> steps;
+public class Step extends Content {
 
-    Step() {
-        steps = new ArrayList<Step>();
+    public Step() {
+        value = "";
     }
 
+    public Step(String tmp) {
+        value = tmp;
+    }
+/*
 
     public void accept(Visitor v){
         v.visit(this);
@@ -20,4 +22,6 @@ public class Step {
         }
 
     }
+
+ */
 }
