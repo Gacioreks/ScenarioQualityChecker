@@ -14,8 +14,7 @@ public class TextTransformerController {
     private static final Logger logger = LoggerFactory.getLogger(TextTransformerController.class);
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
-    public String get(@PathVariable String text,
-                              @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
+    public String get(@PathVariable String text, @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
 
         // log the parameters
         logger.debug(text);
@@ -27,8 +26,7 @@ public class TextTransformerController {
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public String post(@PathVariable String text,
-                      @RequestBody String[] transforms) {
+    public String post(@PathVariable String text, @RequestBody String[] transforms) {
 
         // log the parameters
         logger.debug(text);

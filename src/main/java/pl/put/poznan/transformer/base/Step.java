@@ -12,6 +12,7 @@ public class Step {
         steps = new ArrayList<Step>();
     }
 
+
     public void accept(Visitor v){
         v.visit(this);
         for (Step s : this.steps){
