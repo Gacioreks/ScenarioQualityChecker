@@ -9,6 +9,10 @@ public class Step extends Content {
     public Step() {
         value = "";
     }
+
+    public Step(String tmp) {
+        value = tmp;
+    }
 /*
 
     public void accept(Visitor v){

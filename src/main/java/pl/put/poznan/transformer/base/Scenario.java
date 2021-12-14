@@ -7,16 +7,14 @@ import java.util.ArrayList;
 public class Scenario {
     public String title;
     public ArrayList<String> actors;
-    //public String actors;
     public String systemActor;
-    public SubScenario content;
+    public SubScenario mySubScenario;
 
     public Scenario(){
         title = new String();
         actors = new ArrayList<String>();
-        //actors = new String();
         systemActor = new String();
-        content = new SubScenario();
+        mySubScenario = new SubScenario();
     }
 /*
     public void accept(Visitor v){

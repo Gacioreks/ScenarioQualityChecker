@@ -20,21 +20,17 @@ public class FileReaderController {
         // log the parameters
         logger.debug(text);
 
-        FileReader reader = new FileReader();
-
-
-        return reader.Arr2Scen(text);
+        //FileReader reader = new FileReader();
+        return FileReader.arr2Scenario(text);
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public Scenario post(@PathVariable String text, @RequestBody ArrayList[] file) {
+    public Scenario post(@PathVariable String text, @RequestBody Scenario s) {
 
-        // log the parameters
         logger.debug(text);
-        logger.debug(Arrays.toString(file));
+        logger.debug(s.title);
 
-        // perform the transformation, you should run your logic here, below is just a silly example
-        FileReader reader = new FileReader();
-        return reader.Arr2Scen(text);
+        //FileReader reader = new FileReader();
+        return FileReader.arr2Scenario(text);
     }
 }
