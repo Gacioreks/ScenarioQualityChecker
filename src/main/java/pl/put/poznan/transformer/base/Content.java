@@ -1,4 +1,6 @@
 package pl.put.poznan.transformer.base;
 
-public class Content {
+public abstract class Content {
+    public static String value;
+
 }

@@ -24,7 +24,7 @@ public class CounterVisitor implements Visitor{
         ArrayList<String> words = new ArrayList<String>();
         quantity += 1;
 
-
+/*
         String [] temp = s.content.split(" ");
         for(String word : temp){
             words.add(word);
@@ -58,5 +58,6 @@ public class CounterVisitor implements Visitor{
 
     public void getKeyWordsNumber(){
         System.out.println("Number of key words: " + key_words);
+        */
     }
 }
