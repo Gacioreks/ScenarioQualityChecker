@@ -18,23 +18,20 @@ public class FileReaderController {
 
         // log the parameters
         logger.debug(text);
-        //logger.debug(Arrays.toString(file));
 
-        // perform the transformation, you should run your logic here, below is just a silly example
         FileReader reader = new FileReader();
         return reader.read(text);
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public ArrayList post(@PathVariable String text) {
+    public ArrayList post(@PathVariable String text, @RequestBody ArrayList[] file) {
 
         // log the parameters
         logger.debug(text);
-        //logger.debug(Arrays.toString(file));
+        logger.debug(Arrays.toString(file));
 
         // perform the transformation, you should run your logic here, below is just a silly example
         FileReader reader = new FileReader();
-        //file=reader.read(text);
         return reader.read(text);
     }
 }

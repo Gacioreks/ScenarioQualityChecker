@@ -12,7 +12,7 @@ public class FileReader {
         ArrayList<String> result = new ArrayList<>();
         try
         {
-            File myFile = new File(file);
+            File myFile = new File("files\\"+file);
             Scanner myReader = new Scanner(myFile);
             while (myReader.hasNextLine())
             {
