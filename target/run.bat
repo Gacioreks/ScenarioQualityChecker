@@ -1,0 +1,1 @@
+java -jar io-project-architecture-0.1.jar
