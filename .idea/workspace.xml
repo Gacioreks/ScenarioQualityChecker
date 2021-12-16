@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/myInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/io-project-architecture.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Step.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/CounterVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/CounterVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/FileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/TestVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/TestVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/FileReaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/FileReaderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

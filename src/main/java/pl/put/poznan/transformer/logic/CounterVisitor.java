@@ -2,6 +2,7 @@ package pl.put.poznan.transformer.logic;
 
 import pl.put.poznan.transformer.base.Scenario;
 import pl.put.poznan.transformer.base.Step;
+import pl.put.poznan.transformer.base.SubScenario;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,10 @@ public class CounterVisitor implements Visitor{
     ArrayList<Step> steps = new ArrayList<Step>();
 
     @Override
-    public void visit(Scenario sc) {
+    public void visit(SubScenario sc) {
 
         quantity += 0;
-        actors = sc.actors;
+        //actors = sc.actors;
     }
 
     @Override
@@ -24,7 +25,7 @@ public class CounterVisitor implements Visitor{
         ArrayList<String> words = new ArrayList<String>();
         quantity += 1;
 
-
+/*
         String [] temp = s.content.split(" ");
         for(String word : temp){
             words.add(word);
@@ -58,5 +59,6 @@ public class CounterVisitor implements Visitor{
 
     public void getKeyWordsNumber(){
         System.out.println("Number of key words: " + key_words);
+        */
     }
 }
