@@ -15,22 +15,22 @@ public class FileReaderController {
     private static final Logger logger = LoggerFactory.getLogger(FileReaderController.class);
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
-    public Scenario get(@PathVariable String text) {
+    public ArrayList<String> get(@PathVariable String text) {
 
         // log the parameters
         logger.debug(text);
 
         //FileReader reader = new FileReader();
-        return FileReader.arr2Scenario(text);
+        return FileReader.read(text);
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public Scenario post(@PathVariable String text, @RequestBody Scenario s) {
+    public ArrayList<String> post(@PathVariable String text, @RequestBody ArrayList<String> s) {
 
         logger.debug(text);
-        logger.debug(s.title);
+        //logger.debug(s.title);
 
         //FileReader reader = new FileReader();
-        return FileReader.arr2Scenario(text);
+        return FileReader.read(text);
     }
 }
