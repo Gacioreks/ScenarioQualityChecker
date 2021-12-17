@@ -104,7 +104,49 @@ public class SubScenario {
         return content;
     }
 
+    
+     public void step_counter(SubScenario cont){
+        for (Object s : cont.content){
+            if(s.getClass() == Step.class){
+                this.quantity += 1;
+                System.out.println(((Step) s).value);
+            }else{
+                step_counter((SubScenario) s);
+            }
+        }
+    }
 
+    public void get_steps_count(){
+        if (quantity!=0) {
+            System.out.println("Liczba wszystkich kroków: " + (quantity - 1)); // quantity - 1 bo pierwszy element w liscie content jest pusty. Dlaczego ?
+            this.quantity = 0;
+        }else{
+            System.out.println("Liczba wszystkich kroków: " + (quantity));
+
+        }
+    }
+
+    public void key_word_counter(SubScenario cont){
+        String [] temp;
+        for (Object s : cont.content){
+            if(s.getClass() == Step.class){
+                temp = ((Step) s).value.split(" ");
+                for (String word : temp){
+                    if (word.equals("IF:") || word.equals("FOR") || word.equals("ELSE:")){
+                        this.key_words += 1;
+                    }
+                }
+            }else{
+                key_word_counter((SubScenario) s);
+            }
+        }
+    }
+
+    public void get_key_words_count(){
+        System.out.println("Liczba słów kluczowych: " + this.key_words);
+        this.key_words = 0;
+    }
+    
     public void accept(Visitor v){
         v.visit(this);
         for (Object s : this.content){
