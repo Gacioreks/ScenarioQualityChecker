@@ -33,9 +33,6 @@ public class SubScenario {
                 SubScenario sub = new SubScenario();
                 sub.addContent(start,list,lvl+1);
                 content.add(sub);
-                for(int y=0; y<sub.save.size();y++){
-                    save.add(sub.save.get(y));
-                }
 
             } else if (Objects.equals(line, "<end>")) {
                 return content;
@@ -43,6 +40,37 @@ public class SubScenario {
             else {
                 Step s = new Step(lvl,line);
                 content.add(s);
+            }
+        }
+
+        return content;
+    }
+
+    public ArrayList<Object> lvlshow(myInt start, ArrayList<String> list,int lvl, int stop)
+    {
+        String line;
+
+        for(;start.getValue()<list.size();start.increment()) {
+            line = list.get(start.getValue());
+            line=line.replaceAll("\\t+","");
+            if (line.equals("<start>")) {
+                start.increment();
+
+                SubScenario sub = new SubScenario();
+                sub.lvlshow(start,list,lvl+1, stop);
+                content.add(sub);
+
+            } else if (Objects.equals(line, "<end>")) {
+                return content;
+            }
+            else {
+                if (lvl >= stop){
+                    continue;
+                }
+                else{
+                    Step s = new Step(lvl,line);
+                    content.add(s);
+                }
             }
         }
 
@@ -114,7 +142,7 @@ public class SubScenario {
         for (Object s : cont.content){
             if(s.getClass() == Step.class){
                 this.quantity += 1;
-                System.out.println(((Step) s).value);
+                //System.out.println(((Step) s).value);
             }else{
                 step_counter((SubScenario) s);
             }

@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/with_steps-file11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/with_steps-file11.txt" afterDir="false" />
-    </list>
+    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +46,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.Application" />
-      <module name="io-project-architecture" />
+      <module name="ScenarioQualityChecke" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.put.poznan.transformer.app.*" />

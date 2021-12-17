@@ -23,22 +23,35 @@ public class Application {
 
         Scenario x = new Scenario(ofile);
 
-        int n = x.mySubScenario.content.size();
-
-        output.println("Tytuł: "+x.title);
-        output.println("Aktorzy: "+x.actors);
-        output.println("Aktor systemowy: "+x.systemActor);
-
         System.out.println("Tytuł: "+x.title);
         System.out.print("Aktorzy: ");
         x.actors.forEach(System.out::print);
         System.out.print("\n");
-        System.out.println("Aktor systemowy: "+x.systemActor);
+        System.out.println("Aktor systemowy: "+x.systemActor+"\n");
 
+        ////Wyświetlenie scenariusza
+        //System.out.println("Wyświetlenie scenariusza");
+        //x.Scenarioshow();
 
-        for (int y=0; y<x.mySubScenario.save.size(); y++){
-            output.println(x.mySubScenario.save.get(y));
-        }
+        ////Wyświetlenie scenariusza z numeracją korków
+        //System.out.println("Scenariusz z numeracją kroków");
+        //x.Scenarionumershow();
+
+        ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
+        System.out.println("Scenariusz do poziomu zagłebienia");
+        x.Scenariolvlshow(2);
+
+        ////Wyświetlenie liczby kroków scenariusza
+        //x.Stepscount();
+
+        ////Wyświetlanie liczby słów kluczowych
+        //x.Keywords();
+
+        ////Wyświetlanie niepoprawnych kroków scenariusza
+        //x.Stepscheck();
+
+        ////Zapis scenariusza do pliku
+        //x.Savetofile(output);
 
         x.mySubScenario.accept(new Visitor() {
             @Override
