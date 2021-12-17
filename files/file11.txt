@@ -19,3 +19,5 @@ Bibliotekarz podaje dane książki.
 	<end>
 Bibliotekarz zatwierdza dodanie książki.
 System informuje o poprawnym dodaniu książki.
+Bibliotekarz zatwierdza dodanie książki.
+System informuje o poprawnym dodaniu książki.

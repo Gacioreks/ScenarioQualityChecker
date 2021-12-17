@@ -28,6 +28,7 @@ public class Scenario {
         this.title = list.get(0);
         this.actors.add(list.get(1)); //jeden element, pozniej rozszerzyc
         this.systemActor = list.get(2);
-        this.mySubScenario.addContent(startInt,list,0);
+        //this.mySubScenario.addContent(startInt,list,0);
+        this.mySubScenario.numerized(startInt,list,0, 0, "");
     }
 }

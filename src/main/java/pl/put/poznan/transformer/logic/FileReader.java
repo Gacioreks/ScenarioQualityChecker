@@ -1,9 +1,5 @@
 package pl.put.poznan.transformer.logic;
 
-import pl.put.poznan.transformer.base.Content;
-import pl.put.poznan.transformer.base.Scenario;
-import pl.put.poznan.transformer.base.Step;
-
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.ArrayList;

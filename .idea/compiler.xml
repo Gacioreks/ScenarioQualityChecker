@@ -6,12 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ScenarioQualityChecker-main — kopia" />
         <module name="io-project-architecture" />
+        <module name="ScenarioQualityChecker-Task5_zapis_do_pliku" />
+        <module name="ScenarioQualityChecker-main" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ScenarioQualityChecker-Task5_zapis_do_pliku" options="-parameters" />
+      <module name="ScenarioQualityChecker-main" options="-parameters" />
+      <module name="ScenarioQualityChecker-main — kopia" options="-parameters" />
       <module name="io-project-architecture" options="-parameters" />
     </option>
   </component>

@@ -2,17 +2,11 @@ package pl.put.poznan.transformer.base;
 
 import pl.put.poznan.transformer.logic.Visitor;
 
-import java.util.ArrayList;
-
 public class Step {
 
     public String value;
     public int level;
 
-    public Step() {
-        value = "";
-        level = 0;
-    }
 
     public Step(int a, String tmp) {
         value = tmp;
