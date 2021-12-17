@@ -30,5 +30,9 @@ public class Scenario {
         this.systemActor = list.get(2);
         //this.mySubScenario.addContent(startInt,list,0);
         this.mySubScenario.numerized(startInt,list,0, 0, "");
+        this.mySubScenario.step_counter(this.mySubScenario);
+        this.mySubScenario.get_steps_count();
+        this.mySubScenario.key_word_counter(this.mySubScenario);
+        this.mySubScenario.get_key_words_count();
     }
 }
