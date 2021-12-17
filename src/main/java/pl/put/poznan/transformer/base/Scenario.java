@@ -36,5 +36,7 @@ public class Scenario {
         this.mySubScenario.get_steps_count();
         this.mySubScenario.key_word_counter(this.mySubScenario);
         this.mySubScenario.get_key_words_count();
+        this.mySubScenario.step_check(this.mySubScenario, actors, systemActor);
+        this.mySubScenario.get_invalid_steps();
     }
 }
