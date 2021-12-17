@@ -17,6 +17,7 @@ public class SubScenario {
     SubScenario() {
         content = new ArrayList<>();
         save = new ArrayList<>();
+        invalid_steps = new ArrayList<Step>();
     }
 
     public ArrayList<Object> addContent(myInt start, ArrayList<String> list,int lvl)
