@@ -1,5 +1,5 @@
 Tytuł: Dodanie książki
-Aktorzy: [Bibliotekarz, Sekretarka, Nauczyciel]
+Aktorzy: [Bibliotekarz,  Sekretarka,  Nauczyciel]
 Aktor systemowy: System
 
 1. Bibliotekarz wybiera opcje dodania nowej pozycji książkowej

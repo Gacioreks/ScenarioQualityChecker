@@ -27,7 +27,7 @@ public class Scenario {
         //Scenario s = new Scenario();
 
         this.title = list.get(0);
-        this.actors = new ArrayList<String>(Arrays.asList(list.get(1).split(" , ")));
+        this.actors = new ArrayList<String>(Arrays.asList(list.get(1).split(",")));
 
         this.systemActor = list.get(2);
         //this.mySubScenario.addContent(startInt,list,0);

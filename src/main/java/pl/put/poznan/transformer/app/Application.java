@@ -31,7 +31,8 @@ public class Application {
 
         System.out.println("Tytuł: "+x.title);
         System.out.print("Aktorzy: ");
-        x.actors.forEach(System.out::println);
+        x.actors.forEach(System.out::print);
+        System.out.print("\n");
         System.out.println("Aktor systemowy: "+x.systemActor);
 
 
