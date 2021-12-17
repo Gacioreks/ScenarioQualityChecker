@@ -9,6 +9,9 @@ import java.util.Objects;
 public class SubScenario {
     public ArrayList<Object> content;
     public ArrayList<String> save;
+    private int quantity = 0;
+    private int key_words = 0;
+    
 
     SubScenario() {
         content = new ArrayList<>();
