@@ -142,7 +142,6 @@ public class SubScenario {
         for (Object s : cont.content){
             if(s.getClass() == Step.class){
                 this.quantity += 1;
-                //System.out.println(((Step) s).value);
             }else{
                 step_counter((SubScenario) s);
             }

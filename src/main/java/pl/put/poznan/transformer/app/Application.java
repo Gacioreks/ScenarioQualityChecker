@@ -21,49 +21,45 @@ public class Application {
 
         PrintWriter output = new PrintWriter("with_steps-" + ofile);
 
+        //Obiekty scenariusze
         Scenario x = new Scenario(ofile);
 
+        System.out.println("Dane scenariusza:");
         System.out.println("Tytuł: "+x.title);
         System.out.print("Aktorzy: ");
         x.actors.forEach(System.out::print);
         System.out.print("\n");
-        System.out.println("Aktor systemowy: "+x.systemActor+"\n");
+        System.out.println("Aktor systemowy: "+x.systemActor);
 
         ////Wyświetlenie scenariusza
-        //System.out.println("Wyświetlenie scenariusza");
-        //x.Scenarioshow();
-
-        ////Wyświetlenie scenariusza z numeracją korków
-        //System.out.println("Scenariusz z numeracją kroków");
-        //x.Scenarionumershow();
+        System.out.println("\n"+"Wyświetlenie scenariusza");
+        x.Scenarioshow();
 
         ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
-        System.out.println("Scenariusz do poziomu zagłebienia");
+        System.out.println("\n"+"Scenariusz do poziomu zagłebienia");
+        x = new Scenario(ofile);
         x.Scenariolvlshow(2);
 
+        ////Wyświetlenie scenariusza z numeracją korków
+        System.out.println("\n"+"Scenariusz z numeracją kroków");
+        x = new Scenario(ofile);
+        x.Scenarionumershow();
+
         ////Wyświetlenie liczby kroków scenariusza
-        //x.Stepscount();
+        System.out.println("\n" + "Liczba kroków");
+        x.Stepscount();
 
         ////Wyświetlanie liczby słów kluczowych
-        //x.Keywords();
+        System.out.println("\n" + "Słowa kluczowe");
+        x.Keywords();
 
         ////Wyświetlanie niepoprawnych kroków scenariusza
-        //x.Stepscheck();
+        System.out.println("\n" + "Niepoprawne kroki");
+        x.Stepscheck();
 
         ////Zapis scenariusza do pliku
-        //x.Savetofile(output);
-
-        x.mySubScenario.accept(new Visitor() {
-            @Override
-            public void visit(Step s) {
-                ;
-            }
-
-            @Override
-            public void visit(SubScenario sc) {
-                ;
-            }
-        });
+        System.out.println("\n" + "Zapis");
+        x.Savetofile(output);
 
         output.close();
     }

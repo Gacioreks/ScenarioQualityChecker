@@ -1,0 +1,19 @@
+Tytuł: Dodanie książki
+Aktorzy: [Bibliotekarz,  Sekretarka,  Nauczyciel]
+Aktor systemowy: System
+
+1. Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
+2. Wyświetla się formularz.
+3. Bibliotekarz podaje dane książki.
+   3.1. IF: Bibliotekarz pragnie dodać egzemplarze książki
+   3.2. Bibliotekarz wybiera opcję definiowania egzemplarzy
+   3.3. System prezentuje zdefiniowane egzemplarze
+      3.3.1. FOR EACH egzemplarz:
+      3.3.2. Bibliotekarz wybiera opcję dodania egzemplarza
+      3.3.3. System prosi o podanie danych egzemplarza
+      3.3.4. Bibliotekarz podaje dane egzemplarza i zatwierdza.
+      3.3.5. System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
+4. Bibliotekarz zatwierdza dodanie książki.
+5. System informuje o poprawnym dodaniu książki.
+6. Bibliotekarz zatwierdza dodanie książki.
+7. System informuje o poprawnym dodaniu książki.
