@@ -11,6 +11,7 @@ public class SubScenario {
     public ArrayList<String> save;
     private int quantity = 0;
     private int key_words = 0;
+    private ArrayList<Step> invalid_steps;
     
 
     SubScenario() {
@@ -148,6 +149,70 @@ public class SubScenario {
     public void get_key_words_count(){
         System.out.println("Liczba słów kluczowych: " + this.key_words);
         this.key_words = 0;
+    }
+    
+    public void step_check(SubScenario sc, ArrayList<String> act, String sys_act){
+        String [] temp;
+        String tem;
+        ArrayList<String> words = new ArrayList<String>();
+        boolean starting_with_actor = false;
+
+
+        for(Object s : sc.content){
+            if(s.getClass() == Step.class){
+                if (((Step) s).value.equals("")){
+                    continue;
+                }
+                tem = ((Step) s).value;
+                tem = tem.trim();
+                temp = tem.split(" ");
+
+                for (String t : temp){
+                    words.add(t);
+                }
+
+                words.remove(0); // usunięcie numeru
+                if(words.get(0).equals("IF:") || words.get(0).equals("ELSE:")){
+                    words.remove(0);
+                }
+
+                if(words.get(0).equals("FOR")){
+                    words.clear();
+                    continue;
+                }
+
+                for (String actor : act) {
+                    if (words.get(0).equals(actor)){
+                        starting_with_actor = true;
+                    }
+                }
+
+                if(words.get(0).equals(sys_act)){
+                    starting_with_actor = true;
+                }
+
+                if(!starting_with_actor){
+                    this.invalid_steps.add((Step) s);
+                }
+                starting_with_actor = false;
+                words.clear();
+            }
+            else{
+                step_check((SubScenario) s, act, sys_act);
+            }
+        }
+    }
+
+    public void get_invalid_steps(){
+        if(this.invalid_steps.size() == 0){
+            System.out.println("Brak Kroków nie zaczynających się od aktora");
+        }else {
+            System.out.println("Kroki nie zaczynające się od aktora(" + this.invalid_steps.size() + "):");
+            for (Step s : this.invalid_steps) {
+                System.out.println(s.value);
+            }
+        }
+        this.invalid_steps.clear();
     }
     
     public void accept(Visitor v){
