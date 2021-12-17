@@ -5,6 +5,7 @@ import pl.put.poznan.transformer.logic.Visitor;
 import pl.put.poznan.transformer.logic.myInt;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Scenario {
     public String title;
@@ -26,7 +27,8 @@ public class Scenario {
         //Scenario s = new Scenario();
 
         this.title = list.get(0);
-        this.actors.add(list.get(1)); //jeden element, pozniej rozszerzyc
+        this.actors = new ArrayList<String>(Arrays.asList(list.get(1).split(" , ")));
+
         this.systemActor = list.get(2);
         //this.mySubScenario.addContent(startInt,list,0);
         this.mySubScenario.numerized(startInt,list,0, 0, "");

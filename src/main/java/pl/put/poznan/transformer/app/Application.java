@@ -2,6 +2,7 @@ package pl.put.poznan.transformer.app;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Collections;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.put.poznan.transformer.base.Scenario;
@@ -29,7 +30,8 @@ public class Application {
         output.println("Aktor systemowy: "+x.systemActor);
 
         System.out.println("Tytuł: "+x.title);
-        System.out.println("Aktorzy: "+x.actors);
+        System.out.print("Aktorzy: ");
+        x.actors.forEach(System.out::println);
         System.out.println("Aktor systemowy: "+x.systemActor);
 
 
@@ -48,8 +50,6 @@ public class Application {
                 ;
             }
         });
-
-
 
         output.close();
     }

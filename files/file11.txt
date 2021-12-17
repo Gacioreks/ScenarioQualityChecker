@@ -1,5 +1,5 @@
 Dodanie książki
-Bibliotekarz
+Bibliotekarz, Sekretarka, Nauczyciel
 System
 
 Bibliotekarz wybiera opcje dodania nowej pozycji książkowej
