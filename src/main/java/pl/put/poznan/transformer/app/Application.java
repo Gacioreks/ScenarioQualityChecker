@@ -23,26 +23,26 @@ public class Application {
 
         //Obiekty scenariusze
         Scenario x = new Scenario(ofile);
-
+/*
         System.out.println("Dane scenariusza:");
         System.out.println("Tytuł: "+x.title);
         System.out.print("Aktorzy: ");
         x.actors.forEach(System.out::print);
         System.out.print("\n");
         System.out.println("Aktor systemowy: "+x.systemActor);
-
+*/
         ////Wyświetlenie scenariusza
         System.out.println("\n"+"Wyświetlenie scenariusza");
         x.Scenarioshow();
 
         ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
         System.out.println("\n"+"Scenariusz do poziomu zagłebienia");
-        x = new Scenario(ofile);
+        //x = new Scenario(ofile);
         x.Scenariolvlshow(2);
 
         ////Wyświetlenie scenariusza z numeracją korków
         System.out.println("\n"+"Scenariusz z numeracją kroków");
-        x = new Scenario(ofile);
+        //x = new Scenario(ofile);
         x.Scenarionumershow();
 
         ////Wyświetlenie liczby kroków scenariusza

@@ -29,9 +29,19 @@ public class Scenario {
         this.systemActor = list.get(2);
     }
 
+    public Scenario(Scenario tmp) {
+        this.title=tmp.title;
+        this.actors=tmp.actors;
+        this.systemActor=tmp.systemActor;
+        this.mySubScenario=tmp.mySubScenario;
+        this.startInt=tmp.startInt;
+        this.list=tmp.list;
+    }
+
     public void Scenarioshow() {
-        this.mySubScenario.addContent(startInt, list, 0);
-        this.mySubScenario.accept(new Visitor() {
+        Scenario tmp=new Scenario(this);
+        tmp.mySubScenario.addContent(startInt, list, 0);
+        tmp.mySubScenario.accept(new Visitor() {
             @Override
             public void visit(Step s) {
                 ;
@@ -60,8 +70,9 @@ public class Scenario {
     }
 
     public void Scenariolvlshow(int stop){
-        this.mySubScenario.lvlshow(startInt, list, 0,stop);
-        this.mySubScenario.accept(new Visitor() {
+        Scenario tmp=new Scenario(this);
+        tmp.mySubScenario.lvlshow(startInt, list, 0,stop);
+        tmp.mySubScenario.accept(new Visitor() {
             @Override
             public void visit(Step s) {
                 ;

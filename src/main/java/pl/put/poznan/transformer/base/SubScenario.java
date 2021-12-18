@@ -199,7 +199,7 @@ public class SubScenario {
                     words.add(t);
                 }
 
-                words.remove(0); // usunięcie numeru
+                //words.remove(0); // usunięcie numeru
                 if(words.get(0).equals("IF:") || words.get(0).equals("ELSE:")){
                     words.remove(0);
                 }
