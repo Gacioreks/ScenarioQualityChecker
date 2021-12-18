@@ -210,7 +210,7 @@ public class SubScenario {
                 }
 
                 for (String actor : act) {
-                    if (words.get(0).equals(actor)){
+                    if (words.get(0).equals(actor.trim())){
                         starting_with_actor = true;
                     }
                 }
