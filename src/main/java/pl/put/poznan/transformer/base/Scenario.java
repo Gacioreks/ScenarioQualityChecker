@@ -34,7 +34,7 @@ public class Scenario {
         this.actors=tmp.actors;
         this.systemActor=tmp.systemActor;
         this.mySubScenario=tmp.mySubScenario;
-        this.startInt=tmp.startInt;
+        this.startInt = new myInt(3);
         this.list=tmp.list;
     }
 

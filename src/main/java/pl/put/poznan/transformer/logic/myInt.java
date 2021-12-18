@@ -10,6 +10,7 @@ public class myInt {
     public void increment(){
         this.value+=1;
     }
+    public void set(int a){this.value=a;}
     public int getValue(){
         return value;
     }
