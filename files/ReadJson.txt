@@ -1,0 +1,20 @@
+Wyplata z bankomatu
+[Użytkownik]
+System
+
+Użytkownik wkłada kartę do bankomatu.
+System pyta o PIN.
+IF: niepoprawny PIN.
+<start>
+System prosi o ponowne podanie PIN.
+Użytkownik podaje PIN.
+<end>
+System potwierdza wpisany PIN.
+Użytkownik podaje kwotę którą chce wypłacic.
+IF: Kwota jest większa niż Saldo.
+<start>
+System informuje użytkownika o niepoprawnej kwocie.
+Użytkownik podaje nową kwotę.
+<end>
+System oddaje kartę.
+System wyplaca pieniądze.

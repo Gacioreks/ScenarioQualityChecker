@@ -1,14 +1,16 @@
 package pl.put.poznan.transformer.base;
 
+import com.google.gson.Gson;
 import pl.put.poznan.transformer.logic.Visitor;
 import pl.put.poznan.transformer.logic.myInt;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class SubScenario {
     public ArrayList<Object> content;
-    public ArrayList<String> save;
     private int quantity = 0;
     private int key_words = 0;
     private ArrayList<Step> invalid_steps;
@@ -16,7 +18,6 @@ public class SubScenario {
 
     SubScenario() {
         content = new ArrayList<>();
-        save = new ArrayList<>();
         invalid_steps = new ArrayList<Step>();
     }
 
@@ -26,7 +27,7 @@ public class SubScenario {
 
         for(;start.getValue()<list.size();start.increment()) {
             line = list.get(start.getValue());
-            line=line.replaceAll("\\t+","");
+            line=line.replaceAll("\t+","");
             if (line.equals("<start>")) {
                 start.increment();
 
@@ -93,19 +94,17 @@ public class SubScenario {
                     dep = dep + "." + String.valueOf((stp-1));
                 }
 
+
                 SubScenario sub = new SubScenario();
                 sub.numerized(start,list,lvl+1, 1, dep);
+                dep="";
                 content.add(sub);
-                for(int y=0; y<sub.save.size();y++){
-                    save.add(sub.save.get(y));
-                }
 
             } else if (Objects.equals(line, "<end>")) {
                 return content;
             }
             else {
                 if (stp == 0){
-                    save.add(line);
                     Step s = new Step(lvl,line);
                     content.add(s);
                     stp+=1;
@@ -116,14 +115,12 @@ public class SubScenario {
                         for (int i=0; i<lvl*3; i++){
                             line = " " + line;
                         }
-                        save.add(line);
                         Step s = new Step(lvl,line);
                         content.add(s);
                         stp+=1;
                     }
                     else{
                         line = String.valueOf(stp) + "." + " " + line;
-                        save.add(line);
                         Step s = new Step(lvl,line);
                         content.add(s);
                         stp+=1;
@@ -133,7 +130,6 @@ public class SubScenario {
 
             }
         }
-
         return content;
     }
 
@@ -148,14 +144,18 @@ public class SubScenario {
         }
     }
 
-    public void get_steps_count(){
+    public int get_steps_count(){
         if (quantity!=0) {
             System.out.println("Liczba wszystkich kroków: " + (quantity - 1)); // quantity - 1 bo pierwszy element w liscie content jest pusty. Dlaczego ?
+            int out = this.quantity-1;
+            this.Save2JSONint(out,"./json/steps_count.json");
             this.quantity = 0;
+            return out;
         }else{
             System.out.println("Liczba wszystkich kroków: " + (quantity));
-
+            this.Save2JSONint(this.quantity,"./json/steps_count.json");
         }
+        return this.quantity;
     }
 
     public void key_word_counter(SubScenario cont){
@@ -176,6 +176,7 @@ public class SubScenario {
 
     public void get_key_words_count(){
         System.out.println("Liczba słów kluczowych: " + this.key_words);
+        this.Save2JSONint(this.key_words,"./json/Keywords.json");
         this.key_words = 0;
     }
     
@@ -199,7 +200,7 @@ public class SubScenario {
                     words.add(t);
                 }
 
-                words.remove(0); // usunięcie numeru
+                //words.remove(0); // usunięcie numeru
                 if(words.get(0).equals("IF:") || words.get(0).equals("ELSE:")){
                     words.remove(0);
                 }
@@ -232,15 +233,19 @@ public class SubScenario {
     }
 
     public void get_invalid_steps(){
+        ArrayList<Step> tmp = new ArrayList<>();
         if(this.invalid_steps.size() == 0){
             System.out.println("Brak Kroków nie zaczynających się od aktora");
         }else {
             System.out.println("Kroki nie zaczynające się od aktora(" + this.invalid_steps.size() + "):");
             for (Step s : this.invalid_steps) {
                 System.out.println(s.value);
+                tmp.add(s);
             }
         }
-        this.invalid_steps.clear();
+        this.Save2JSON(tmp,"./json/Stepscheck.json");
+        //this.invalid_steps.clear();
+
     }
     
     public void accept(Visitor v){
@@ -248,6 +253,50 @@ public class SubScenario {
         for (Object s : this.content){
             if(s.getClass()==Step.class) ((Step) s).accept(v);
             else ((SubScenario) s).accept(v);
+        }
+    }
+
+    public  void Save2JSON(ArrayList<Step> s,String fileJson){
+        FileWriter file = null;
+        //private static FileWriter file;
+        try {
+            // Constructs a FileWriter given a file name, using the platform's default charset
+            file = new FileWriter("./files/"+fileJson);
+            file.write(new Gson().toJson(s));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        } finally {
+
+            try {
+                file.flush();
+                file.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public  void Save2JSONint(int i,String fileJson){
+        FileWriter file = null;
+        //private static FileWriter file;
+        try {
+            // Constructs a FileWriter given a file name, using the platform's default charset
+            file = new FileWriter("./files/"+fileJson);
+            file.write(new Gson().toJson(i));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        } finally {
+
+            try {
+                file.flush();
+                file.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

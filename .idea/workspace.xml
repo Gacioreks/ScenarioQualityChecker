@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="" />
+    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/KeywordsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenariolvlshow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioshowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepsCountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepscheckController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/FileReaderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioController.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,25 +50,58 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/com/fasterxml/jackson/datatype/json-20140107.jar" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.Application" />
-      <module name="ScenarioQualityChecke" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.put.poznan.transformer.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SebGra\Documents\SEMESTR_5\INZYNIERIA OPROGRAMOWANIA\Projekt1\nowy projekt XD\ScenarioQualityChecker" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.Application" />
+      <module name="io-project-architecture" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ScenarioQualityChecker" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Application" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
@@ -71,8 +116,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639491062162</updated>
+      <workItem from="1639826152593" duration="10390000" />
+      <workItem from="1639837507864" duration="19175000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -85,5 +135,20 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

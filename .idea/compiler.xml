@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ScenarioQualityChecker-main — kopia" />
         <module name="io-project-architecture" />
+        <module name="ScenarioQualityChecker" />
         <module name="ScenarioQualityChecker-Task5_zapis_do_pliku" />
         <module name="ScenarioQualityChecker-main" />
         <module name="ScenarioQualityChecke" />
@@ -17,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ScenarioQualityChecke" options="-parameters" />
+      <module name="ScenarioQualityChecker" options="-parameters" />
       <module name="ScenarioQualityChecker-Task5_zapis_do_pliku" options="-parameters" />
       <module name="ScenarioQualityChecker-main" options="-parameters" />
       <module name="ScenarioQualityChecker-main — kopia" options="-parameters" />

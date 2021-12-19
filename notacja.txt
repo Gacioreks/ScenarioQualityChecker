@@ -1,0 +1,6 @@
+/{file}/    -> czytanie scenariusza
+/{file}/lvl/{int}    -> czyt. scen. do danego poziomu
+/{file}/num     -> czyt. scen. z numeracją
+/{file}/keys  -> ilość wstąpienia wszystkich słów kluczowych
+/{file}/count  -> ilość wstąpienia wszystkich kroków
+/{file}/noact    -> wypisanie scen. bez kroków zaczynających się od aktora

@@ -1,4 +1,11 @@
-C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\rest\TextTransformerController.java
-C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\TextTransformer.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\rest\ScenarioController.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\Visitor.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\JsonReader.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\myInt.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\rest\FileReaderController.java
 C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\app\Application.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\base\Step.java
 C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\rest\HelloController.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\logic\FileReader.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\base\Scenario.java
+C:\Users\SzP_Technik\Documents\GitHub\ScenarioQualityChecker\src\main\java\pl\put\poznan\transformer\base\SubScenario.java
