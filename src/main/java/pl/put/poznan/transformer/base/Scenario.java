@@ -127,7 +127,7 @@ public class Scenario {
         this.mySubScenario.key_word_counter(this.mySubScenario);
         this.mySubScenario.get_key_words_count();
 
-        //zwraca inta
+        //zwraca int
     }
 
     public void Stepscheck(){
