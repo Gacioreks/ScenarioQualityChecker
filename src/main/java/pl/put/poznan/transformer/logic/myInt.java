@@ -10,6 +10,9 @@ public class myInt {
     public void increment(){
         this.value+=1;
     }
+    public void reset(){
+        this.value=3;
+    }
     public int getValue(){
         return value;
     }

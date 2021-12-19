@@ -17,5 +17,5 @@ Bibliotekarz podaje dane egzemplarza i zatwierdza.
 System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
 <end>
 <end>
-Bibliotekarz zatwierdza dodanie książki.
+nieBibliotekarz zatwierdza dodanie książki.
 System informuje o poprawnym dodaniu książki.
