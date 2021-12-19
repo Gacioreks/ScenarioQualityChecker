@@ -26,7 +26,7 @@ public class SubScenario {
 
         for(;start.getValue()<list.size();start.increment()) {
             line = list.get(start.getValue());
-            line=line.replaceAll("\\t+","");
+            line=line.replaceAll("\t+","");
             if (line.equals("<start>")) {
                 start.increment();
 
@@ -148,14 +148,18 @@ public class SubScenario {
         }
     }
 
-    public void get_steps_count(){
+    public int get_steps_count(){
         if (quantity!=0) {
             System.out.println("Liczba wszystkich kroków: " + (quantity - 1)); // quantity - 1 bo pierwszy element w liscie content jest pusty. Dlaczego ?
+            int out = this.quantity;
             this.quantity = 0;
+            return out;
+
         }else{
             System.out.println("Liczba wszystkich kroków: " + (quantity));
 
         }
+        return this.quantity;
     }
 
     public void key_word_counter(SubScenario cont){
