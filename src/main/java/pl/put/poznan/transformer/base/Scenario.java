@@ -1,10 +1,7 @@
 package pl.put.poznan.transformer.base;
 
 import com.google.gson.Gson;
-import pl.put.poznan.transformer.logic.FileReader;
-import pl.put.poznan.transformer.logic.JsonReader;
-import pl.put.poznan.transformer.logic.Visitor;
-import pl.put.poznan.transformer.logic.myInt;
+import pl.put.poznan.transformer.logic.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -55,17 +52,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.addContent(startInt, list, 0);
-        tmp.mySubScenario.accept(new Visitor() {
-            @Override
-            public void visit(Step s) {
-                ;
-            }
-
-            @Override
-            public void visit(SubScenario sc) {
-                ;
-            }
-        });
+        tmp.mySubScenario.accept(new ShowScenarioVisitor());
         this.mySubScenario=tmp.mySubScenario;
         this.Save2JSON(tmp,"./json/Scenarioshow.json");
     }
@@ -75,17 +62,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.numerized(numInt, list, 0, 0, "");
-        tmp.mySubScenario.accept(new Visitor() {
-            @Override
-            public void visit(Step s) {
-                ;
-            }
-
-            @Override
-            public void visit(SubScenario sc) {
-                ;
-            }
-        });
+        tmp.mySubScenario.accept(new ShowScenarioVisitor());
         this.Save2JSON(tmp,"./json/Scenarionumershow.json");
     }
 
@@ -94,17 +71,7 @@ public class Scenario {
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.lvlshow(startInt, list, 0,stop);
-        tmp.mySubScenario.accept(new Visitor() {
-            @Override
-            public void visit(Step s) {
-                ;
-            }
-
-            @Override
-            public void visit(SubScenario sc) {
-                ;
-            }
-        });
+        tmp.mySubScenario.accept(new ShowScenarioVisitor());
         this.Save2JSON(tmp,"./json/Scenariolvlshow.json");
     }
 
@@ -113,8 +80,12 @@ public class Scenario {
         this.mySubScenario=new SubScenario();
         this.mySubScenario.addContent(startInt, list, 0);
 
-        this.mySubScenario.step_counter(this.mySubScenario);
-        int value = this.mySubScenario.get_steps_count();
+        StepCountVisitor v = new StepCountVisitor();
+        this.mySubScenario.accept(v);
+        int value = v.getStepCount();
+
+//        this.mySubScenario.step_counter(this.mySubScenario);
+//        int value = this.mySubScenario.get_steps_count();
         return value;
     }
 
@@ -124,10 +95,12 @@ public class Scenario {
         this.mySubScenario=new SubScenario();
         this.mySubScenario.addContent(startInt, list, 0);
 
-        this.mySubScenario.key_word_counter(this.mySubScenario);
-        this.mySubScenario.get_key_words_count();
+        //this.mySubScenario.key_word_counter(this.mySubScenario);
+        //this.mySubScenario.get_key_words_count();
+        KeyWordsVisitor v = new KeyWordsVisitor();
+        this.mySubScenario.accept(v);
+        int value = v.getKeyWords();
 
-        //zwraca inta
     }
 
     public void Stepscheck(){
@@ -135,10 +108,14 @@ public class Scenario {
         this.mySubScenario=new SubScenario();
         this.mySubScenario.addContent(startInt, list, 1);
 
-        this.mySubScenario.step_check(this.mySubScenario, actors, systemActor);
-        this.mySubScenario.get_invalid_steps();
+        //this.mySubScenario.step_check(this.mySubScenario, actors, systemActor);
+        //this.mySubScenario.get_invalid_steps();
 
-        //this.Save2JSON(this,"./json/Stepscheck.json");
+        StepCheckVisitor v = new StepCheckVisitor(this.actors, this.systemActor);
+        this.mySubScenario.accept(v);
+
+        ArrayList<Step> steps = v.getInvalidSteps();
+        this.mySubScenario.Save2JSON(steps,"./json/Stepscheck.json");
     }
 
     public  void Save2JSON(Scenario s,String fileJson){

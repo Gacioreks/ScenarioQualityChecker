@@ -9,8 +9,8 @@ public class Application {
 
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException{
         SpringApplication.run(Application.class, args);
-/*
-        String file="file5";
+
+        String file="file4.json";
         //Obiekty scenariusze
         Scenario x = new Scenario(file);
 
@@ -38,6 +38,6 @@ public class Application {
         System.out.println("\n" + "Niepoprawne kroki");
         x.Stepscheck();
 
-*/
+
     }
 }

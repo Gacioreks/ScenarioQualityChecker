@@ -14,10 +14,8 @@ public class Step {
     }
 
     public void accept(Visitor v){
-        StringBuilder tmp = new StringBuilder();
-        for(int i=0;i<level;i++) tmp.append("\t");
 
         v.visit(this);
-        System.out.println(tmp+this.value);
+
     }
 }
