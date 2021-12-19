@@ -20,15 +20,21 @@ public class Scenariolvlshow {
 
         // log the parameters
         logger.debug(text);
-        //logger.debug(String.valueOf(a));
+        String out;
 
-        Scenario s=new Scenario(text);
-        s.Scenariolvlshow(num);
-
-        File myFile = new File("./files/json/Scenariolvlshow.json");
-        Scanner myReader = new Scanner(myFile);
-        String out=myReader.nextLine();
-
+        File tempFile = new File("./files/input/"+text);
+        boolean exists = tempFile.exists();
+        if(exists)
+        {
+            Scenario s=new Scenario(text);
+            s.Scenariolvlshow(num);
+            File myFile = new File("./files/json/Scenariolvlshow.json");
+            Scanner myReader = new Scanner(myFile);
+            out=myReader.nextLine();
+        }
+        else {
+            out="Error";
+        }
         return out;
     }
 

@@ -19,13 +19,21 @@ public class KeywordsController {
 
         // log the parameters
         logger.debug(text);
+        String out;
 
-        Scenario s=new Scenario(text);
-        s.Keywords();
-
-        File myFile = new File("./files/json/Keywords.json");
-        Scanner myReader = new Scanner(myFile);
-        String out=myReader.nextLine();
+        File tempFile = new File("./files/input/"+text);
+        boolean exists = tempFile.exists();
+        if(exists)
+        {
+            Scenario s=new Scenario(text);
+            s.Keywords();
+            File myFile = new File("./files/json/Keywords.json");
+            Scanner myReader = new Scanner(myFile);
+            out=myReader.nextLine();
+        }
+        else {
+            out="Error";
+        }
 
         return out;
     }
