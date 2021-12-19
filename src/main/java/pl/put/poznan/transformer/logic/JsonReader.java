@@ -22,7 +22,7 @@ public  class JsonReader {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
 
-        try (FileReader reader = new FileReader("file4.json"))
+        try (FileReader reader = new FileReader("file5.json"))
         {
             //Read JSON file
             Object obj = jsonParser.parse(reader);

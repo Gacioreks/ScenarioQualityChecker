@@ -1,21 +1,20 @@
-Dodanie książki
-[Bibliotekarz]
+Wyplata z bankomatu
+[Użytkownik]
 System
 
-Bibliotekarz wybiera opcje dodania nowej pozycji książkowej.
-Wyświetla się formularz.
-Bibliotekarz podaje dane książki.
-IF: Bibliotekarz pragnie dodać egzemplarze książki.
+Użytkownik wkłada kartę do bankomatu.
+System pyta o PIN.
+IF: niepoprawny PIN.
 <start>
-Bibliotekarz wybiera opcję definiowania egzemplarzy.
-System prezentuje zdefiniowane egzemplarze.
-FOR EACH egzemplarz:
+System prosi o ponowne podanie PIN.
+Użytkownik podaje PIN.
+<end>
+System potwierdza wpisany PIN.
+Użytkownik podaje kwotę którą chce wypłacic.
+IF: Kwota jest większa niż Saldo.
 <start>
-Bibliotekarz wybiera opcję dodania egzemplarza.
-System prosi o podanie danych egzemplarza.
-Bibliotekarz podaje dane egzemplarza i zatwierdza.
-System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowaną listę egzemplarzy.
+System informuje użytkownika o niepoprawnej kwocie.
+Użytkownik podaje nową kwotę.
 <end>
-<end>
-nieBibliotekarz zatwierdza dodanie książki.
-System informuje o poprawnym dodaniu książki.
+System oddaje kartę.
+System wyplaca pieniądze.

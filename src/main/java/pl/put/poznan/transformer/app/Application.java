@@ -18,7 +18,7 @@ public class Application {
 
         ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
         System.out.println("\n"+"Scenariusz do poziomu zagłebienia");
-        x.Scenariolvlshow(2);
+        x.Scenariolvlshow(1);
 
         ////Wyświetlenie scenariusza z numeracją korków
         System.out.println("\n"+"Scenariusz z numeracją kroków");

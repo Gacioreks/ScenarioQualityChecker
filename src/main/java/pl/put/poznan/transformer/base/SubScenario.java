@@ -94,8 +94,10 @@ public class SubScenario {
                     dep = dep + "." + String.valueOf((stp-1));
                 }
 
+
                 SubScenario sub = new SubScenario();
                 sub.numerized(start,list,lvl+1, 1, dep);
+                dep="";
                 content.add(sub);
 
             } else if (Objects.equals(line, "<end>")) {
@@ -128,7 +130,6 @@ public class SubScenario {
 
             }
         }
-
         return content;
     }
 
