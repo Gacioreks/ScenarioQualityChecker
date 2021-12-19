@@ -109,6 +109,10 @@ public class Scenario {
     }
 
     public int Stepscount() {
+        this.startInt.reset();
+        this.mySubScenario=new SubScenario();
+        this.mySubScenario.addContent(startInt, list, 0);
+
         this.mySubScenario.step_counter(this.mySubScenario);
         int value = this.mySubScenario.get_steps_count();
         return value;

@@ -1,21 +1,17 @@
 package pl.put.poznan.transformer.rest;
 
-import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import pl.put.poznan.transformer.base.Scenario;
-import pl.put.poznan.transformer.logic.FileReader;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-
 @RestController
-@RequestMapping("/{text}")
-public class ScenarioController {
+@RequestMapping("/{text}/keys")
+public class KeywordsController {
     private static final Logger logger = LoggerFactory.getLogger(Scenario.class);
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
@@ -25,9 +21,9 @@ public class ScenarioController {
         logger.debug(text);
 
         Scenario s=new Scenario(text);
-        s.Scenarioshow();
+        s.Keywords();
 
-        File myFile = new File("./files/json/Scenarioshow.json");
+        File myFile = new File("./files/json/Keywords.json");
         Scanner myReader = new Scanner(myFile);
         String out=myReader.nextLine();
 
