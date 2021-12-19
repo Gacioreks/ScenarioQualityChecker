@@ -146,13 +146,13 @@ public class SubScenario {
     public int get_steps_count(){
         if (quantity!=0) {
             System.out.println("Liczba wszystkich kroków: " + (quantity - 1)); // quantity - 1 bo pierwszy element w liscie content jest pusty. Dlaczego ?
-            int out = this.quantity;
+            int out = this.quantity-1;
+            this.Save2JSONint(out,"./json/steps_count.json");
             this.quantity = 0;
             return out;
-
         }else{
             System.out.println("Liczba wszystkich kroków: " + (quantity));
-
+            this.Save2JSONint(this.quantity,"./json/steps_count.json");
         }
         return this.quantity;
     }
@@ -175,6 +175,7 @@ public class SubScenario {
 
     public void get_key_words_count(){
         System.out.println("Liczba słów kluczowych: " + this.key_words);
+        this.Save2JSONint(this.key_words,"./json/Keywords.json");
         this.key_words = 0;
     }
     
@@ -261,6 +262,28 @@ public class SubScenario {
             // Constructs a FileWriter given a file name, using the platform's default charset
             file = new FileWriter("./files/"+fileJson);
             file.write(new Gson().toJson(s));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        } finally {
+
+            try {
+                file.flush();
+                file.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public  void Save2JSONint(int i,String fileJson){
+        FileWriter file = null;
+        //private static FileWriter file;
+        try {
+            // Constructs a FileWriter given a file name, using the platform's default charset
+            file = new FileWriter("./files/"+fileJson);
+            file.write(new Gson().toJson(i));
 
         } catch (IOException e) {
             e.printStackTrace();
