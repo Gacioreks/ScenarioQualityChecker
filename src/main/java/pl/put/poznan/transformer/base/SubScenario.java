@@ -43,7 +43,7 @@ public class SubScenario {
             }
         }
 
-        start.set(3);
+        start.reset();
         return content;
     }
 
@@ -74,7 +74,7 @@ public class SubScenario {
                 }
             }
         }
-        start.set(3);
+        start.reset();
         return content;
     }
 
@@ -134,7 +134,7 @@ public class SubScenario {
 
             }
         }
-
+        start.reset();
         return content;
     }
 

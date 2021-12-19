@@ -55,8 +55,10 @@ public class Scenario {
     }
 
     public void Scenarionumershow() {
-        this.mySubScenario.numerized(startInt, list, 0, 0, "");
-        this.mySubScenario.accept(new Visitor() {
+        Scenario tmp=new Scenario(this);
+        tmp.mySubScenario=new SubScenario();
+        tmp.mySubScenario.numerized(startInt, list, 0, 0, "");
+        tmp.mySubScenario.accept(new Visitor() {
             @Override
             public void visit(Step s) {
                 ;
@@ -71,6 +73,7 @@ public class Scenario {
 
     public void Scenariolvlshow(int stop){
         Scenario tmp=new Scenario(this);
+        tmp.mySubScenario=new SubScenario();
         tmp.mySubScenario.lvlshow(startInt, list, 0,stop);
         tmp.mySubScenario.accept(new Visitor() {
             @Override

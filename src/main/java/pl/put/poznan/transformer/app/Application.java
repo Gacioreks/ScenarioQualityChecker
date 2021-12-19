@@ -52,7 +52,7 @@ public class Application {
                 e.printStackTrace();
             }
         }
- 
+
         File myFile = new File("files/"+fileJson);
         Scanner myReader = new Scanner(myFile);
 
@@ -70,7 +70,7 @@ public class Application {
         ////Wyświetlenie scenariusza
         System.out.println("\n"+"Wyświetlenie scenariusza");
         x.Scenarioshow();
-/*
+
         ////Wyświetlenie scenariusza do określonego poziomu zagłębienia (poziom główny to 1)
         System.out.println("\n"+"Scenariusz do poziomu zagłebienia");
         //x = new Scenario(ofile);
@@ -96,7 +96,7 @@ public class Application {
         ////Zapis scenariusza do pliku
         System.out.println("\n" + "Zapis");
         x.Savetofile(output);
- */
+
         output.close();
 
 

@@ -11,6 +11,7 @@ public class myInt {
         this.value+=1;
     }
     public void set(int a){this.value=a;}
+    public void reset(){this.value=3;}
     public int getValue(){
         return value;
     }
