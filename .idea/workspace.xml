@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/files/ReadJson.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ReadJson.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/Scenarionumershow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarionumershow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/Scenarioshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarioshow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/Stepscheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Stepscheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/steps_count.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/steps_count.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/with_steps-file11.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,18 +142,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java</url>
-          <line>131</line>
-          <option name="timeStamp" value="13" />
+          <line>84</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

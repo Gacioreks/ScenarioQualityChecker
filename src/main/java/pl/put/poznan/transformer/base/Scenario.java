@@ -21,7 +21,7 @@ public class Scenario {
     public ArrayList<String> list;
 
     public JsonReader json_scenario;
-    public Scenario(){
+    public Scenario(String file){
         title = "";
         actors = new ArrayList<>();
         systemActor = "";
@@ -30,7 +30,7 @@ public class Scenario {
         numInt = new myInt(3);
         json_scenario = new JsonReader();
 
-        json_scenario.main();
+        json_scenario.main(file);
 
         this.title = json_scenario.return_title();
         this.actors = json_scenario.return_actors();

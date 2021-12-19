@@ -1,5 +1,6 @@
 package pl.put.poznan.transformer.app;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.put.poznan.transformer.base.Scenario;
 
@@ -7,10 +8,11 @@ import pl.put.poznan.transformer.base.Scenario;
 public class Application {
 
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException{
-        //SpringApplication.run(Application.class, args);
-
+        SpringApplication.run(Application.class, args);
+/*
+        String file="file5";
         //Obiekty scenariusze
-        Scenario x = new Scenario();
+        Scenario x = new Scenario(file);
 
         ////Wyświetlenie scenariusza
         System.out.println("\n"+"Wyświetlenie scenariusza");
@@ -36,6 +38,6 @@ public class Application {
         System.out.println("\n" + "Niepoprawne kroki");
         x.Stepscheck();
 
-
+*/
     }
 }

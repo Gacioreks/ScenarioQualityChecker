@@ -10,6 +10,14 @@ import java.io.PrintWriter;
 
 @RestController
 public class HelloController {
+    @GetMapping("/first/{id}")
+    public String Reciving(@PathVariable String id) {
 
+        // log the parameters
+
+
+
+        return id;
+    }
 
 }

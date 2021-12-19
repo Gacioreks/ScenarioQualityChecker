@@ -17,12 +17,12 @@ public  class JsonReader {
     public static String systemActor;
     public static ArrayList<Object> mySubScenario;
     @SuppressWarnings("unchecked")
-    public  static void main()
+    public  static void main(String file)
     {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
 
-        try (FileReader reader = new FileReader("file5.json"))
+        try (FileReader reader = new FileReader("./files/input/"+file))
         {
             //Read JSON file
             Object obj = jsonParser.parse(reader);
