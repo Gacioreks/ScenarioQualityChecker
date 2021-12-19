@@ -1,4 +1,4 @@
-[{
+{
   "title": "Wyplata z bankomatu",
   "actors": [
     "Użytkownik"
@@ -57,4 +57,4 @@
       "subSteps": []
     }
   ]
-}]
+}

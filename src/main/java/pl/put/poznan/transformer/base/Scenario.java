@@ -30,11 +30,11 @@ public class Scenario {
         numInt = new myInt(3);
         json_scenario = new JsonReader();
 
-        json_scenario.main(file);
+        JsonReader.main(file);
 
         this.title = json_scenario.return_title();
         this.actors = json_scenario.return_actors();
-        this.systemActor = json_scenario.systemActor;
+        this.systemActor = JsonReader.systemActor;
 
         list = FileReader.read("ReadJson.txt");
     }
