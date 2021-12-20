@@ -4,10 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.put.poznan.transformer.base.Scenario;
 
+import java.io.FileNotFoundException;
+
 @SpringBootApplication(scanBasePackages = {"pl.put.poznan.transformer.rest"})
 public class Application {
 
-    public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException{
+    public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException, FileNotFoundException {
         SpringApplication.run(Application.class, args);
 
         String file="file4.json";

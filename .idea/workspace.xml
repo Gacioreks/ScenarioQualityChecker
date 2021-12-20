@@ -5,22 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/KeyWordsVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/ShowScenarioVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCheckVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCountVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/ReadJson.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ReadJson.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/file11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/file3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/file3.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/input/file3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/file5.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/input/file5.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/json/Scenarionumershow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarionumershow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/json/Scenarioshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarioshow.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/json/Stepscheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Stepscheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/steps_count.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/steps_count.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Step.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Step.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/JsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCheckVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCheckVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCountVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/StepCountVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/KeywordsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/KeywordsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenariolvlshow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenariolvlshow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/Scenarionumershow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioshowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/ScenarioshowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepsCountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepsCountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepscheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/StepscheckController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +64,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -78,7 +88,7 @@
       <recent name="C:\Users\SebGra\Documents\SEMESTR_5\INZYNIERIA OPROGRAMOWANIA\Projekt1\nowy projekt XD\ScenarioQualityChecker" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Application.Application">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -110,7 +120,6 @@
     </configuration>
     <list>
       <item itemvalue="Application.Application" />
-      <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
       <list>
@@ -147,16 +156,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/SubScenario.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
