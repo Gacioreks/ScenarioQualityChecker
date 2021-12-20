@@ -18,7 +18,7 @@ public class StepCountVisitor implements Visitor{
     }
 
     public int getStepCount(){
-        System.out.println("Wizytator - Liczba krokow: " + (this.quantity-1));
+        System.out.println("Liczba krokow: " + (this.quantity-1));
         int out = this.quantity;
         this.quantity = 0;
         return out;
