@@ -25,30 +25,21 @@ public  class JsonReader {
         try (FileReader reader = new FileReader("./files/input/"+file))
         {
             //Read JSON file
-            Object obj = jsonParser.parse(reader);
-
-            JSONArray employeeList = (JSONArray) obj;
-            //System.out.println(employeeList);
-            JSONObject Start_objet = (JSONObject) employeeList.get(0);
-            title_2 = title(Start_objet);
-            actors_2 = actors(Start_objet);
-            systemActor = system_actors(Start_objet);
-            mySubScenario = step(Start_objet);
-
-            //Iterate over employee array
-
-            //System.out.println(title_2);
-            //System.out.println(actors_2);
-            //System.out.println(systemActor);
-            //System.out.println(mySubScenario);
+            try{
+                Object obj = jsonParser.parse(reader);
+                JSONArray employeeList = (JSONArray) obj;
+                //System.out.println(employeeList);
+                JSONObject Start_objet = (JSONObject) employeeList.get(0);
+                title_2 = title(Start_objet);
+                actors_2 = actors(Start_objet);
+                systemActor = system_actors(Start_objet);
+                mySubScenario = step(Start_objet);
+            } catch (Exception ignored) {
+                ;
+            }
 
             into_txt();
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
             e.printStackTrace();
         }
     }
