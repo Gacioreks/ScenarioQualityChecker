@@ -6,8 +6,8 @@ import pl.put.poznan.transformer.base.SubScenario;
 import java.util.Objects;
 
 /**
- * Klasa StepCountVisitor jest implementacją interfejsu Visitor.
- * Służy do obliczania i zwracania liczby kroków w scenariuszu.
+ * Klasa StepCountVisitor jest implementacja interfejsu Visitor.
+ * Sluzy do obliczania i zwracania liczby krokow w scenariuszu.
  */
 
 public class StepCountVisitor implements Visitor{
@@ -15,7 +15,7 @@ public class StepCountVisitor implements Visitor{
     private int quantity = 0;
 
     /**
-     * Funkcja visit uruchamiana jest dla każdego kroku scenariusza, zwiększa ona wartość prywatnego pola quantity o 1.
+     * Funkcja visit uruchamiana jest dla kazdego kroku scenariusza, zwieksza ona wartosc prywatnego pola quantity o 1.
      * @param s Odwiedzany krok.
      */
     @Override
@@ -26,7 +26,7 @@ public class StepCountVisitor implements Visitor{
     }
 
     /**
-     * Funkcja visit uruchamiana jest dla każdego scenariusza, jest pusta ponieważ wymaga tego interfejs który implementuje.
+     * Funkcja visit uruchamiana jest dla kazdego scenariusza, jest pusta poniewaz wymaga tego interfejs ktory implementuje.
      * @param sc Odwiedzany podscenariusz.
      */
     @Override
@@ -35,9 +35,9 @@ public class StepCountVisitor implements Visitor{
     }
 
     /**
-     * Funkcja getStepCount zwraca ilość kroków w scenariuszu oraz zeruje prywatne pole quantity.
-     * Powinna być uruchamiana bezpośrednio po wywołaniu funkcji visit na wszystkich krokach scenariusza.
-     * @return Ilość kroków w Scenariuszu.
+     * Funkcja getStepCount zwraca ilosc krokow w scenariuszu oraz zeruje prywatne pole quantity.
+     * Powinna być uruchamiana bezposrednio po wywolaniu funkcji visit na wszystkich krokach scenariusza.
+     * @return Ilosc krokow w Scenariuszu.
      */
     public int getStepCount(){
         System.out.println("Liczba krokow: " + (this.quantity));
@@ -46,4 +46,3 @@ public class StepCountVisitor implements Visitor{
         return out;
     }
 }
-
