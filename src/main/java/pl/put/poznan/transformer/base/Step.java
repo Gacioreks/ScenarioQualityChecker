@@ -9,9 +9,12 @@ import pl.put.poznan.transformer.logic.Visitor;
  */
 public class Step {
     /**
-     * Treść kroku oraz poziom zaglebienia.
+     * Treść kroku.
      */
     public String value;
+    /**
+     * Poziom zaglebienia.
+     */
     public int level;
 
     /**
