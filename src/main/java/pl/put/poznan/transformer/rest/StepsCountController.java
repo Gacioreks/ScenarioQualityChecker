@@ -19,19 +19,27 @@ public class StepsCountController {
 
         // log the parameters
         logger.debug(text);
+        String out;
 
-        Scenario s=new Scenario(text);
-        s.Stepscount();
-
-        File myFile = new File("./files/json/steps_count.json");
-        Scanner myReader = new Scanner(myFile);
-        String out=myReader.nextLine();
+        File tempFile = new File("./files/input/"+text);
+        boolean exists = tempFile.exists();
+        if(exists)
+        {
+            Scenario s=new Scenario(text);
+            s.Stepscount();
+            File myFile = new File("./files/json/steps_count.json");
+            Scanner myReader = new Scanner(myFile);
+            out=myReader.nextLine();
+        }
+        else {
+            out="Error";
+        }
 
         return out;
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
-    public String post(@PathVariable String text, @RequestBody String out) throws FileNotFoundException {
+    public String post(@PathVariable String text, @RequestBody String out) {
 
         logger.debug(text);
         logger.debug(out);

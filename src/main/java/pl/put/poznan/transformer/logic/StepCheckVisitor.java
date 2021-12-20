@@ -40,7 +40,7 @@ public class StepCheckVisitor implements Visitor{
         }
 
         if(words.get(0).equals(sys_actor)) starting_with_actor = true;
-        if(words.get(0).equals("FOR")) starting_with_actor = true;
+        if(words.get(0).equals("FOR") || words.get(0).equals("")) starting_with_actor = true;
 
         if (!starting_with_actor) this.invalid_steps.add(s);
     }

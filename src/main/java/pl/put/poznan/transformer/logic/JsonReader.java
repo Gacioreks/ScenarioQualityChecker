@@ -34,11 +34,10 @@ public  class JsonReader {
                 actors_2 = actors(Start_objet);
                 systemActor = system_actors(Start_objet);
                 mySubScenario = step(Start_objet);
+                into_txt();
             } catch (Exception ignored) {
                 ;
             }
-
-            into_txt();
         } catch (IOException e) {
             e.printStackTrace();
         }

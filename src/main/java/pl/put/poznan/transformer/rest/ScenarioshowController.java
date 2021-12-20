@@ -20,15 +20,24 @@ public class ScenarioshowController {
 
         // log the parameters
         logger.debug(text);
+        String out;
 
-        Scenario s=new Scenario(text);
-        s.Scenarioshow();
-
-        File myFile = new File("./files/json/Scenarioshow.json");
-        Scanner myReader = new Scanner(myFile);
-        String out=myReader.nextLine();
+        File tempFile = new File("./files/input/"+text);
+        boolean exists = tempFile.exists();
+        if(exists)
+        {
+            Scenario s=new Scenario(text);
+            s.Scenarioshow();
+            File myFile = new File("./files/json/Scenarioshow.json");
+            Scanner myReader = new Scanner(myFile);
+            out=myReader.nextLine();
+        }
+        else {
+            out="Error";
+        }
 
         return out;
+
     }
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")

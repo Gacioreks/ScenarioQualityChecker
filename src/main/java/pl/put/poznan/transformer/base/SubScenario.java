@@ -11,9 +11,11 @@ import java.util.Objects;
 
 public class SubScenario {
     public ArrayList<Object> content;
+    public ArrayList<String> save;
 
     SubScenario() {
         content = new ArrayList<>();
+        save = new ArrayList<>();
     }
 
     public ArrayList<Object> addContent(myInt start, ArrayList<String> list,int lvl)
@@ -93,14 +95,19 @@ public class SubScenario {
                 SubScenario sub = new SubScenario();
                 sub.numerized(start,list,lvl+1, 1, dep);
                 dep="";
+                for(int i=0;i<sub.save.size();i++)
+                {
+                    save.add(sub.save.get(i));
+                }
                 content.add(sub);
 
             } else if (Objects.equals(line, "<end>")) {
                 return content;
             }
-            else {
+            else if(!Objects.equals(line, "")) {
                 if (stp == 0){
                     Step s = new Step(lvl,line);
+                    save.add(line);
                     content.add(s);
                     stp+=1;
                 }
@@ -111,12 +118,14 @@ public class SubScenario {
                             line = " " + line;
                         }
                         Step s = new Step(lvl,line);
+                        save.add(line);
                         content.add(s);
                         stp+=1;
                     }
                     else{
                         line = String.valueOf(stp) + "." + " " + line;
                         Step s = new Step(lvl,line);
+                        save.add(line);
                         content.add(s);
                         stp+=1;
                     }

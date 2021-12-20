@@ -3,6 +3,7 @@ package pl.put.poznan.transformer.base;
 import com.google.gson.Gson;
 import pl.put.poznan.transformer.logic.*;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -57,13 +58,18 @@ public class Scenario {
         this.Save2JSON(tmp,"./json/Scenarioshow.json");
     }
 
-    public void Scenarionumershow() {
+    public void Scenarionumershow() throws FileNotFoundException {
+        PrintWriter pw = new PrintWriter("./files/out.txt");
+
         Scenario tmp=new Scenario(this);
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
         tmp.mySubScenario.numerized(numInt, list, 0, 0, "");
         tmp.mySubScenario.accept(new ShowScenarioVisitor());
+
+        tmp.Savetofile(pw);
         this.Save2JSON(tmp,"./json/Scenarionumershow.json");
+        pw.close();
     }
 
     public void Scenariolvlshow(int stop){
@@ -86,6 +92,7 @@ public class Scenario {
 
 //        this.mySubScenario.step_counter(this.mySubScenario);
 //        int value = this.mySubScenario.get_steps_count();
+        this.mySubScenario.Save2JSONint(value,"./json/steps_count.json");
         return value;
     }
 
@@ -100,7 +107,7 @@ public class Scenario {
         KeyWordsVisitor v = new KeyWordsVisitor();
         this.mySubScenario.accept(v);
         int value = v.getKeyWords();
-
+        this.mySubScenario.Save2JSONint(value,"./json/Keywords.json");
     }
 
     public void Stepscheck(){
@@ -132,6 +139,7 @@ public class Scenario {
         } finally {
 
             try {
+                assert file != null;
                 file.flush();
                 file.close();
             } catch (IOException e) {
@@ -140,17 +148,15 @@ public class Scenario {
         }
     }
 
-    /*
     public void Savetofile(PrintWriter output){
         output.println("Tytuł: "+this.title);
         output.println("Aktorzy: "+this.actors);
         output.println("Aktor systemowy: "+this.systemActor);
 
-        this.mySubScenario.numerized(startInt, list, 0, 0, "");
+        //this.mySubScenario.numerized(startInt, list, 0, 0, "");
 
         for (int y=0; y<this.mySubScenario.save.size(); y++){
             output.println(this.mySubScenario.save.get(y));
         }
     }
-    */
 }

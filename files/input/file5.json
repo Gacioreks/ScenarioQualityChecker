@@ -10,7 +10,7 @@
       "subSteps": []
     },
     {
-      "content": "System pyta o PIN.",
+      "content": "IF: System pyta o PIN.",
       "subSteps": []
     },
     {
