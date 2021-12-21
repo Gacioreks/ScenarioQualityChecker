@@ -129,9 +129,7 @@ public class SubScenario {
                         content.add(s);
                         stp+=1;
                     }
-
                 }
-
             }
         }
         return content;

@@ -64,7 +64,7 @@ public class Scenario {
         Scenario tmp=new Scenario(this);
         tmp.mySubScenario=new SubScenario();
         tmp.startInt.reset();
-        tmp.mySubScenario.numerized(numInt, list, 0, 0, "");
+        tmp.mySubScenario.numerized(numInt, list, 0, 1, "");
         tmp.mySubScenario.accept(new ShowScenarioVisitor());
 
         tmp.Savetofile(pw);
