@@ -3,6 +3,7 @@ Dodanie książki
 System
 
 Bibliotekarz wybiera opcje dodania nowej pozycji książkowej.
+Wyświetla się formularz.
 Bibliotekarz podaje dane książki.
 IF: Bibliotekarz pragnie dodać egzemplarze książki.
 <start>
