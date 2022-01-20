@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 class StepCountVisitorTest {
     @Test
     void brakKrokow() {
-        Scenario s = new Scenario("file4.json");
+        Scenario s = new Scenario("file3.json");
         StepCountVisitor v = new StepCountVisitor();
 
         assertTrue(s.Stepscount(v) == 0);
@@ -23,10 +23,13 @@ class StepCountVisitorTest {
 
     @Test
     void mockTest(){
-
-        Scenario s = new Scenario("fil4.json");
+        Scenario s = new Scenario("file5.json");
         SubScenario mock = mock(SubScenario.class);
         Object o = new Object();
+
+        s.Scenarioshow();
+        int test = 0;
+        int size = s.mySubScenario.content.size();
 
         ArrayList<Object> objects = new ArrayList<Object>();
 
@@ -34,16 +37,13 @@ class StepCountVisitorTest {
         objects.add(o);
         objects.add(o);
 
-        when(mock.addContent(s.startInt,s.list,0)).thenReturn(objects);
+        when(mock.getContent()).thenReturn(objects.size());
 
-        for(int i = 0; i<s.mySubScenario.content.size();i++){
+        for(int i = 0; i<size;i++){
             s.mySubScenario.content.remove(0);
         }
+        test += s.Count(mock);
 
-        for (int i = 0; i<objects.size(); i++){
-            s.mySubScenario.content.add(objects.get(i));
-        }
-
-        assertEquals(3, s.getContentLenght(), 0);
+        assertEquals(3, test, 0);
     }
 }

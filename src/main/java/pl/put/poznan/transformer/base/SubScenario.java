@@ -18,6 +18,12 @@ public class SubScenario {
         save = new ArrayList<>();
     }
 
+    public int getContent(){
+        int len = this.content.size();
+
+        return len;
+    }
+
     public ArrayList<Object> addContent(myInt start, ArrayList<String> list,int lvl)
     {
         String line;

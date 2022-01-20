@@ -47,6 +47,11 @@ public class Scenario {
         this.list=tmp.list;
     }
 
+    public int Count(SubScenario mock){
+        this.mySubScenario = mock;
+        int c = this.mySubScenario.getContent();
+        return c;
+    }
 
     public void Scenarioshow() {
         Scenario tmp=new Scenario(this);
@@ -94,12 +99,6 @@ public class Scenario {
 //        int value = this.mySubScenario.get_steps_count();
         this.mySubScenario.Save2JSONint(value,"./json/steps_count.json");
         return value;
-    }
-
-    public int getContentLenght(){
-        int len = this.mySubScenario.content.size();
-
-        return len;
     }
 
     public void Keywords()
