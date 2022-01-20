@@ -81,12 +81,12 @@ public class Scenario {
         this.Save2JSON(tmp,"./json/Scenariolvlshow.json");
     }
 
-    public int Stepscount() {
+    public int Stepscount(StepCountVisitor v) {
         this.startInt.reset();
         this.mySubScenario=new SubScenario();
         this.mySubScenario.addContent(startInt, list, 0);
 
-        StepCountVisitor v = new StepCountVisitor();
+        //StepCountVisitor v = new StepCountVisitor();
         this.mySubScenario.accept(v);
         int value = v.getStepCount();
 
@@ -94,6 +94,12 @@ public class Scenario {
 //        int value = this.mySubScenario.get_steps_count();
         this.mySubScenario.Save2JSONint(value,"./json/steps_count.json");
         return value;
+    }
+
+    public int getContentLenght(){
+        int len = this.mySubScenario.content.size();
+
+        return len;
     }
 
     public void Keywords()

@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import pl.put.poznan.transformer.base.Scenario;
+import pl.put.poznan.transformer.logic.StepCountVisitor;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,7 +27,8 @@ public class StepsCountController {
         if(exists)
         {
             Scenario s=new Scenario(text);
-            s.Stepscount();
+            StepCountVisitor v = new StepCountVisitor();
+            s.Stepscount(v);
             File myFile = new File("./files/json/steps_count.json");
             Scanner myReader = new Scanner(myFile);
             out=myReader.nextLine();

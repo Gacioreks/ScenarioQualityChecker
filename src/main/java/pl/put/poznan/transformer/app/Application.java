@@ -3,6 +3,7 @@ package pl.put.poznan.transformer.app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pl.put.poznan.transformer.base.Scenario;
+import pl.put.poznan.transformer.logic.StepCountVisitor;
 
 import java.io.FileNotFoundException;
 
@@ -30,7 +31,8 @@ public class Application {
 
         ////Wyświetlenie liczby kroków scenariusza
         System.out.println("\n" + "Liczba kroków");
-        x.Stepscount();
+        StepCountVisitor v = new StepCountVisitor();
+        x.Stepscount(v);
 
         ////Wyświetlanie liczby słów kluczowych
         System.out.println("\n" + "Słowa kluczowe");
