@@ -41,7 +41,5 @@ public class Application {
         ////Wyświetlanie niepoprawnych kroków scenariusza
         System.out.println("\n" + "Niepoprawne kroki");
         x.Stepscheck();
-
-
     }
 }

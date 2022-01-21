@@ -47,6 +47,10 @@ public class Scenario {
         this.list=tmp.list;
     }
 
+    public String SysActor(){
+        return this.systemActor;
+    }
+
     public int Count(SubScenario mock){
         this.mySubScenario = mock;
         int c = this.mySubScenario.getContent();
@@ -101,7 +105,7 @@ public class Scenario {
         return value;
     }
 
-    public void Keywords()
+    public int Keywords()
     {
         this.startInt.reset();
         this.mySubScenario=new SubScenario();
@@ -113,6 +117,7 @@ public class Scenario {
         this.mySubScenario.accept(v);
         int value = v.getKeyWords();
         this.mySubScenario.Save2JSONint(value,"./json/Keywords.json");
+        return value;
     }
 
     public void Stepscheck(){
