@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import pl.put.poznan.transformer.base.Scenario;
 import pl.put.poznan.transformer.logic.StepCountVisitor;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ScenarioTest {
@@ -46,8 +48,15 @@ class ScenarioTest {
     }
 
     @Test
-    void testActors(){
+    void testTitle(){
         assertEquals("Dodanie książki", s.Title());
         //assertEquals("Dodanie książki123", s.Title());
+    }
+    @Test
+    void testActors(){
+        ArrayList<String> actors = new ArrayList<>() ;
+        actors.add("Bibliotekarz");
+        assertEquals(actors,s.actors);
+
     }
 }

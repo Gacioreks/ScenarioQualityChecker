@@ -1,0 +1,13 @@
+[{
+  "title": "tmp",
+  "actors": [
+    "User", "notUser"
+  ],
+  "systemActor": "sys",
+  "steps": [
+    {
+      "content": "",
+      "subSteps": []
+    }
+  ]
+}]

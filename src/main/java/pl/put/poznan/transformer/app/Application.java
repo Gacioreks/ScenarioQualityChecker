@@ -13,7 +13,7 @@ public class Application {
     public static void main(String[] args) throws IllegalAccessException, NoSuchFieldException, FileNotFoundException {
         SpringApplication.run(Application.class, args);
 
-        String file="file4.json";
+        String file="file3.json";
         //Obiekty scenariusze
         Scenario x = new Scenario(file);
 

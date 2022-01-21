@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
+    <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="3 tests">
+      <change afterPath="$PROJECT_DIR$/.idea/ScenarioQualityChecker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/input/file6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/SimplyScenarioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/ReadJson.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ReadJson.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/Keywords.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Keywords.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenariolvlshow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/Scenarionumershow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarionumershow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/Scenarioshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarioshow.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/Stepscheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Stepscheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/json/steps_count.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/steps_count.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/ScenarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/ScenarioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/StepCountVisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/StepCountVisitorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,18 +90,7 @@
       <recent name="pl.put.poznan.transformer.base" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScenarioTest.testActors">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SimplyScenarioTest.testMoreThenOneActor">
     <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -100,17 +100,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScenarioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-project-architecture" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.put.poznan.transformer.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.ScenarioTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,8 +129,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScenarioTest.testStepscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="io-project-architecture" />
+    <configuration name="SimplyScenarioTest.brakKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ScenarioQualityChecker" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.put.poznan.transformer.test.*" />
@@ -140,14 +138,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.ScenarioTest" />
-      <option name="METHOD_NAME" value="testStepscount" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.SimplyScenarioTest" />
+      <option name="METHOD_NAME" value="brakKeyWords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepCountVisitorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimplyScenarioTest.testMoreThenOneActor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScenarioQualityChecker" />
       <extension name="coverage">
         <pattern>
@@ -156,13 +154,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.StepCountVisitorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.SimplyScenarioTest" />
+      <option name="METHOD_NAME" value="testMoreThenOneActor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepCountVisitorTest.mockTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StepCountVisitorTest.brakKeyWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScenarioQualityChecker" />
       <extension name="coverage">
         <pattern>
@@ -172,7 +171,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
       <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.StepCountVisitorTest" />
-      <option name="METHOD_NAME" value="mockTest" />
+      <option name="METHOD_NAME" value="brakKeyWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StepCountVisitorTest.testMoreThenOneActor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ScenarioQualityChecker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.put.poznan.transformer.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.StepCountVisitorTest" />
+      <option name="METHOD_NAME" value="testMoreThenOneActor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,19 +202,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Application" />
-      <item itemvalue="JUnit.StepCountVisitorTest" />
-      <item itemvalue="JUnit.StepCountVisitorTest.mockTest" />
-      <item itemvalue="JUnit.ScenarioTest" />
-      <item itemvalue="JUnit.ScenarioTest.testStepscount" />
       <item itemvalue="JUnit.ScenarioTest.testActors" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.StepCountVisitorTest.brakKeyWords" />
+      <item itemvalue="JUnit.StepCountVisitorTest.testMoreThenOneActor" />
+      <item itemvalue="JUnit.SimplyScenarioTest.brakKeyWords" />
+      <item itemvalue="JUnit.SimplyScenarioTest.testMoreThenOneActor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimplyScenarioTest.testMoreThenOneActor" />
+        <item itemvalue="JUnit.SimplyScenarioTest.brakKeyWords" />
+        <item itemvalue="JUnit.StepCountVisitorTest.testMoreThenOneActor" />
+        <item itemvalue="JUnit.StepCountVisitorTest.brakKeyWords" />
         <item itemvalue="JUnit.ScenarioTest.testActors" />
-        <item itemvalue="JUnit.ScenarioTest" />
-        <item itemvalue="JUnit.ScenarioTest.testStepscount" />
-        <item itemvalue="JUnit.StepCountVisitorTest" />
-        <item itemvalue="JUnit.StepCountVisitorTest.mockTest" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +231,7 @@
       <workItem from="1639837507864" duration="19175000" />
       <workItem from="1639950613616" duration="3188000" />
       <workItem from="1642614237207" duration="3131000" />
+      <workItem from="1642775918147" duration="1880000" />
     </task>
     <servers />
   </component>
@@ -235,6 +252,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="3 tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

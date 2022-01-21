@@ -21,8 +21,9 @@ class StepCountVisitorTest {
         assertTrue(s.Stepscount(v) == 0);
     }
 
+
     @Test
-    void mockTest(){
+    void mockTest() {
         Scenario s = new Scenario("file5.json");
         SubScenario mock = mock(SubScenario.class);
         Object o = new Object();
@@ -39,7 +40,7 @@ class StepCountVisitorTest {
 
         when(mock.getContent()).thenReturn(objects.size());
 
-        for(int i = 0; i<size;i++){
+        for (int i = 0; i < size; i++) {
             s.mySubScenario.content.remove(0);
         }
         test += s.Count(mock);
