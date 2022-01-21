@@ -6,22 +6,43 @@ import pl.put.poznan.transformer.base.SubScenario;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Klasa StepCheckVisitor jest implementacja interfejsu Visitor
+ * Sluzy do sprawdzenia czy korki zaczynaja sie od aktorow
+ */
+
 public class StepCheckVisitor implements Visitor{
 
     private ArrayList<Step> invalid_steps = new ArrayList<Step>();
     private ArrayList<String> actors = new ArrayList<String>();
     private String sys_actor;
 
+    /**
+     * Klasyczny konstruktor
+     * @param actrs aktorzy scenariusza.
+     * @param sys_act aktor systemowy scenariusza.
+     */
+
     public StepCheckVisitor(ArrayList<String> actrs, String sys_act){
         this.actors = actrs;
         this.sys_actor = sys_act;
     }
 
+    /**
+     * Funkcja visit urachamiana jest dla kazdego scenariusza, jest pusta poniewaz wymaga tego intefejs ktrory implementuje
+     * @param sc Odwiedzany podscenariusz
+     */
     @Override
     public void visit(SubScenario sc) {
 
     }
 
+    /**
+     * Funkcja visit uruchamian jest dla kazdego kroku scenariusza,
+     * sprawdza czy dany krok rozpoczyna sie od aktora danego scenariusza.
+     * Jeśli krok nie zaczyna sie od aktora jest on dodawany do listy niepoprawnych krokow
+     * @param s Odwiedzany krok
+     */
     @Override
     public void visit(Step s) {
         boolean starting_with_actor= false;
@@ -45,6 +66,11 @@ public class StepCheckVisitor implements Visitor{
         if (!starting_with_actor) this.invalid_steps.add(s);
     }
 
+
+    /**
+     * Funkcja getInvalidSteps zwraca niepoprawne kroki scenariusza oraz je wyświetla
+     * @return Lista niepoprawnych krokow.
+     */
     public ArrayList<Step> getInvalidSteps(){
         System.out.println("Kroki nie zaczynające sie od aktora: ");
         ArrayList<Step> out = new ArrayList<Step>();
