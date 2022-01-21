@@ -44,4 +44,10 @@ class ScenarioTest {
         assertEquals("System", s.SysActor());
         //assertEquals("System1", s.SysActor());
     }
+
+    @Test
+    void testActors(){
+        assertEquals("Dodanie książki", s.Title());
+        //assertEquals("Dodanie książki123", s.Title());
+    }
 }

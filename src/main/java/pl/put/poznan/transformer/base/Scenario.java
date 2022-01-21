@@ -50,6 +50,9 @@ public class Scenario {
     public String SysActor(){
         return this.systemActor;
     }
+    public String Title(){
+        return this.title;
+    }
 
     public int Count(SubScenario mock){
         this.mySubScenario = mock;

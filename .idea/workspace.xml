@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7934ada0-ad72-4310-937a-1fab9c293e42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/ScenarioTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/files/ReadJson.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/ReadJson.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/Scenarioshow.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/Scenarioshow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/json/steps_count.json" beforeDir="false" afterPath="$PROJECT_DIR$/files/json/steps_count.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/base/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/ScenarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/test/ScenarioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <recent name="pl.put.poznan.transformer.base" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScenarioTest">
+  <component name="RunManager" selected="JUnit.ScenarioTest.testActors">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -115,6 +111,22 @@
       <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
       <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.ScenarioTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScenarioTest.testActors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ScenarioQualityChecker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.put.poznan.transformer.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.ScenarioTest" />
+      <option name="METHOD_NAME" value="testActors" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,22 +178,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StepCountVisitorTest.mockTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScenarioQualityChecker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.put.poznan.transformer.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.put.poznan.transformer.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.test.StepCountVisitorTest" />
-      <option name="METHOD_NAME" value="mockTest1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ScenarioQualityChecker" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.Application" />
@@ -191,19 +187,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Application" />
-      <item itemvalue="JUnit.StepCountVisitorTest.mockTest1" />
       <item itemvalue="JUnit.StepCountVisitorTest" />
       <item itemvalue="JUnit.StepCountVisitorTest.mockTest" />
       <item itemvalue="JUnit.ScenarioTest" />
       <item itemvalue="JUnit.ScenarioTest.testStepscount" />
+      <item itemvalue="JUnit.ScenarioTest.testActors" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ScenarioTest.testActors" />
         <item itemvalue="JUnit.ScenarioTest" />
         <item itemvalue="JUnit.ScenarioTest.testStepscount" />
         <item itemvalue="JUnit.StepCountVisitorTest" />
         <item itemvalue="JUnit.StepCountVisitorTest.mockTest" />
-        <item itemvalue="JUnit.StepCountVisitorTest.mockTest1" />
       </list>
     </recent_temporary>
   </component>
