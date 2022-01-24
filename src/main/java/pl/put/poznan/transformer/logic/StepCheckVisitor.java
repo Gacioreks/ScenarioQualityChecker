@@ -8,7 +8,7 @@ import java.util.Collections;
 
 /**
  * Klasa StepCheckVisitor jest implementacja interfejsu Visitor
- * Sluzy do sprawdzenia czy korki zaczynaja sie od aktorow
+ * Służy do sprawdzenia czy korki zaczynają się od aktorów
  */
 
 public class StepCheckVisitor implements Visitor{
@@ -39,8 +39,8 @@ public class StepCheckVisitor implements Visitor{
 
     /**
      * Funkcja visit uruchamian jest dla kazdego kroku scenariusza,
-     * sprawdza czy dany krok rozpoczyna sie od aktora danego scenariusza.
-     * Jeśli krok nie zaczyna sie od aktora jest on dodawany do listy niepoprawnych krokow
+     * sprawdza czy dany krok rozpoczyna się od aktora danego scenariusza.
+     * Jeśli krok nie zaczyna się od aktora jest on dodawany do listy niepoprawnych kroków
      * @param s Odwiedzany krok
      */
     @Override
@@ -69,7 +69,7 @@ public class StepCheckVisitor implements Visitor{
 
     /**
      * Funkcja getInvalidSteps zwraca niepoprawne kroki scenariusza oraz je wyświetla
-     * @return Lista niepoprawnych krokow.
+     * @return Lista niepoprawnych kroków.
      */
     public ArrayList<Step> getInvalidSteps(){
         System.out.println("Kroki nie zaczynające sie od aktora: ");
