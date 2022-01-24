@@ -4,17 +4,17 @@ import pl.put.poznan.transformer.base.Step;
 import pl.put.poznan.transformer.base.SubScenario;
 
 /**
- * Interfejs Visitor pozwala na implementacje wzorca visitor
+ * Interfejs Visitor pozwala na implementację wzorca visitor
  */
 public interface Visitor {
     /**
-     * Funkcja visit ktora powinna byc zaimplementowana dla kazdego visitora
+     * Funkcja visit która powinna być zaimplementowana dla każdego visitors
      * @param s Odwiedzany krok
      */
     public void visit(Step s);
     /**
-     * Funkcja visit ktora powinna byc zaimplementowana dla kazdego visitora
-     * @param sc Odwiedzany podscenariusz
+     * Funkcja visit która powinna być zaimplementowana dla każdego visitors
+     * @param sc Odwiedzany pod scenariusz
      */
     public void visit(SubScenario sc);
 }
