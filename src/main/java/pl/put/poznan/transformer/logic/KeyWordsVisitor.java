@@ -5,7 +5,7 @@ import pl.put.poznan.transformer.base.SubScenario;
 
 /**
  * Klasa KeyWordsVisitor jest implementacja interfejsu Visitor.
- * Sluzy do obliczenia ilosci slow kluczowych w scenariuszu
+ * Służy do obliczenia ilości słów kluczowych w scenariuszu
  */
 
 public class KeyWordsVisitor implements Visitor{
@@ -22,7 +22,7 @@ public class KeyWordsVisitor implements Visitor{
     }
 
     /**
-     * Funkcja visit uruchamiana jest dla kazdego kroku scenariusza, zwieksza wartosc pola prywatnego key_words jesli w kroku znajduje sie slowo kluczowe
+     * Funkcja visit uruchamiana jest dla każdego kroku scenariusza, zwiększa wartość pola prywatnego key_words jeśli w kroku znajduje się słowo kluczowe
      * @param s Odwiedzany krok.
      */
     @Override
@@ -37,9 +37,9 @@ public class KeyWordsVisitor implements Visitor{
     }
 
     /**
-     * Funkcja getKeyWords zwraca ilosc slow kluczowych w scenariuszu
-     * Powinna byc uruchamiana bezposrednio po wywolaniu funkcji visit na wszystkich krokach scenariusza.
-     * @return Ilosc slow kluczowych w Scenariuszu.
+     * Funkcja getKeyWords zwraca ilość słów kluczowych w scenariuszu
+     * Powinna być uruchamiana bezpośrednio po wywołaniu funkcji visit na wszystkich krokach scenariusza.
+     * @return Ilość słów kluczowych w Scenariuszu.
      */
     public int getKeyWords(){
         System.out.println("Liczba słów kluczowych: " + this.key_words);
