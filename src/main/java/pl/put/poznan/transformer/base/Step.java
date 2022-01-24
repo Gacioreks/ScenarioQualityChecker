@@ -3,9 +3,9 @@ package pl.put.poznan.transformer.base;
 import pl.put.poznan.transformer.logic.Visitor;
 
 /**
- * Klasa Step to podstawowa klasa wykorzystywana w projekcie do pracy nad scneriuszem.
+ * Klasa Step to podstawowa klasa wykorzystywana w projekcie do pracy nad scenariuszem.
  * Wykorzystywana przez wizytatora. Obiekt klasy Step jest odzwierciedleniem kroku scenariusza 
- * zawierającym jego tresc oraz poziom zaglebienia. 
+ * zawierającym jego treść oraz poziom zagłębienia. 
  */
 public class Step {
     /**
@@ -13,7 +13,7 @@ public class Step {
      */
     public String value;
     /**
-     * Poziom zaglebienia.
+     * Poziom zagłębienia.
      */
     public int level;
 
